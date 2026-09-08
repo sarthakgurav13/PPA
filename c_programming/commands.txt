@@ -1,0 +1,41 @@
+gcc -save-temps Hello.c -o Hello.exe  
+
+| Command                                  | Work                                                             |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| `gcc Hello.c`                            | Compile and create `a.exe` (default output on Windows may vary). |
+| `gcc Hello.c -o Hello.exe`               | Compile and create `Hello.exe`.                                  |
+| `gcc Hello.c -o Hello`                   | Create executable named `Hello.exe`.                             |
+| `gcc -E Hello.c -o Hello.i`              | Generate the preprocessed source file (`.i`).                    |
+| `gcc -S Hello.c -o Hello.s`              | Generate assembly code (`.s`).                                   |
+| `gcc -c Hello.c -o Hello.o`              | Generate object file (`.o`).                                     |
+| `gcc -save-temps Hello.c -o Hello.exe`   | Keep all intermediate files (`.i`, `.s`, `.o`).                  |
+| `gcc -g Hello.c -o Hello.exe`            | Include debugging information (for GDB).                         |
+| `gcc -Wall Hello.c -o Hello.exe`         | Show common compiler warnings.                                   |
+| `gcc -Wextra Hello.c -o Hello.exe`       | Show additional warnings.                                        |
+| `gcc -Wall -Wextra Hello.c -o Hello.exe` | Recommended for writing better code.                             |
+| `gcc -O1 Hello.c -o Hello.exe`           | Basic optimization.                                              |
+| `gcc -O2 Hello.c -o Hello.exe`           | Good optimization (most commonly used).                          |
+| `gcc -O3 Hello.c -o Hello.exe`           | Maximum optimization for speed.                                  |
+| `gcc -Os Hello.c -o Hello.exe`           | Optimize for smaller executable size.                            |
+| `gcc -std=c11 Hello.c -o Hello.exe`      | Compile using the C11 standard.                                  |
+| `gcc -std=c17 Hello.c -o Hello.exe`      | Compile using the C17 standard.                                  |
+| `gcc -ansi Hello.c -o Hello.exe`         | Compile using ANSI C (C89).                                      |
+| `gcc -pedantic Hello.c`                  | Warn about non-standard C code.                                  |
+| `gcc Hello.c file2.c -o Program.exe`     | Compile multiple source files together.                          |
+| `gcc Hello.o file2.o -o Program.exe`     | Link object files into one executable.                           |
+| `gcc -shared file.c -o mylib.dll`        | Create a DLL (shared library).                                   |
+| `gcc -v Hello.c`                         | Display detailed compilation information.                        |
+| `gcc --version`                          | Show the installed GCC version.                                  |
+| `gcc --help`                             | Show available GCC options.                                      |
+| Command         | Work                                                      |
+| --------------- | --------------------------------------------------------- |
+| `dir`           | List files in the current directory.                      |
+| `dir *.c`       | Show all C source files.                                  |
+| `dir *.exe`     | Show all executables.                                     |
+| `dir *.o`       | Show all object files.                                    |
+| `cls`           | Clear the Command Prompt screen.                          |
+| `cd foldername` | Change directory.                                         |
+| `cd ..`         | Go up one directory.                                      |
+| `Hello.exe`     | Run the executable.                                       |
+| `.\Hello.exe`   | Run the executable explicitly from the current directory. |
+| `del Hello.exe` | Delete the executable.                                    |
